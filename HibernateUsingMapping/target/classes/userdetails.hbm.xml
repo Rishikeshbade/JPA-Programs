@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+<class name="com.example.entity.UserDetails" table="UserDetails">
+   <id name="userId" type="int" column="ID">
+        <generator class="assigned"/>
+   </id>
+   
+   <property name="userName">
+        <column name="UserName"/>
+   </property>
+    <property name="phoneNo">
+        <column name="phoneNo"/>
+   </property>
+    <property name="city">
+        <column name="city"/>
+   </property>
+</class>
+</hibernate-mapping>
